@@ -14,3 +14,4 @@ The name of the site, code and chips, is a pretty bad pun on the British culinar
 
 - [https://github.com/dastevens](https://github.com/dastevens)
 - [https://stackoverflow.com/users/4729833/davestevens](https://stackoverflow.com/users/4729833/davestevens)
+- [https://www.linkedin.com/in/david-stevens-a0136120/](https://www.linkedin.com/in/david-stevens-a0136120/)
