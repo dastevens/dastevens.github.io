@@ -4,15 +4,13 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi, I’m Dave Stevens, a software developer, and welcome to my blog.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I’m going to use this space to share some ideas I have about how I like to write software. And also to document some of my hobby projects.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+The name of the site, code and chips, is a pretty bad pun on the British culinary gem cod and chips. I think it fits the site quite well because on the one hand I’m going to talk about coding. And on the other hand I’ve been tinkering with raspberry pis and arduinos and I plan to write about that too. And on the third hand I quite like the quirkiness of how it sounds.
 
+## Other places you can find me
 
-[jekyll-organization]: https://github.com/jekyll
+- [https://github.com/dastevens](https://github.com/dastevens)
+- [https://stackoverflow.com/users/4729833/davestevens](https://stackoverflow.com/users/4729833/davestevens)
