@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Minimal Scope"
-date:   2021-02-07 12:07:25 +0100
+date:   2021-02-07
 categories: coding design software
 ---
 Code complexity can be split in two: the innate complexity of the problem, and the accidental complexity that has been allowed to creep into the solution.
