@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/realbook/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/realbook/static/js/main.45e6b393.chunk.js",
+    "main.js.map": "/realbook/static/js/main.45e6b393.chunk.js.map",
+    "runtime-main.js": "/realbook/static/js/runtime-main.f6d96715.js",
+    "runtime-main.js.map": "/realbook/static/js/runtime-main.f6d96715.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/realbook/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0d1b10a5.chunk.js": "/realbook/static/js/2.0d1b10a5.chunk.js",
+    "static/js/2.0d1b10a5.chunk.js.map": "/realbook/static/js/2.0d1b10a5.chunk.js.map",
+    "static/js/3.a8062e72.chunk.js": "/realbook/static/js/3.a8062e72.chunk.js",
+    "static/js/3.a8062e72.chunk.js.map": "/realbook/static/js/3.a8062e72.chunk.js.map",
+    "index.html": "/realbook/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/realbook/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.9d5b29c0.chunk.css.map": "/realbook/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.0d1b10a5.chunk.js.LICENSE.txt": "/realbook/static/js/2.0d1b10a5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6d96715.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.0d1b10a5.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.45e6b393.chunk.js"
+  ]
+}

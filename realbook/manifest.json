@@ -1,0 +1,15 @@
+{
+  "short_name": "Real book",
+  "name": "Real book data visualization",
+  "icons": [
+    {
+      "src": "131-100x100-1.ico",
+      "sizes": "100x100",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
