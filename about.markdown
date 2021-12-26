@@ -12,6 +12,7 @@ The name of the site, code and chips, is a pretty bad pun on the British culinar
 
 ## Other places you can find me
 
-- [https://github.com/dastevens](https://github.com/dastevens)
-- [https://stackoverflow.com/users/4729833/davestevens](https://stackoverflow.com/users/4729833/davestevens)
-- [https://www.linkedin.com/in/david-stevens-a0136120/](https://www.linkedin.com/in/david-stevens-a0136120/)
+| --- | --- |
+| ![Github](/assets/images/github-icon.png) | [https://github.com/dastevens](https://github.com/dastevens) |
+| ![Stackoverflow](/assets/images/stackoverflow-icon.png) | [https://stackoverflow.com/users/4729833/davestevens](https://stackoverflow.com/users/4729833/davestevens) |
+| ![Github](/assets/images/linkedin-icon.png)| [https://www.linkedin.com/in/david-stevens-a0136120/](https://www.linkedin.com/in/david-stevens-a0136120/) |

@@ -5,6 +5,9 @@ date:   2021-03-31
 categories: agile coding design scrum software
 ---
 
+<p align="center">
+  <img src="/assets/images/header-640.131.2.png" width="100%">
+</p>
 
 The [agile manifesto](https://agilemanifesto.org/) has been around for twenty years now, and probably the most frequently used approach is using [scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)). It’s the best project management method for software development we have. But there are some pitfalls, and this article is about one of them.
 

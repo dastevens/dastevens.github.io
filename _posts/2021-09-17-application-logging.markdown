@@ -5,6 +5,10 @@ date:   2021-09-17
 categories: coding software
 ---
 
+<p align="center">
+  <img src="/assets/images/header-640.131.3.png" width="100%">
+</p>
+
 Diagnosing unexpected issues in long-running background processes can be hard. The issue may only arise rarely and it may be difficult to reproduce outside of the production environment.
 
 There is quite an array of information on how to implement logging, but less on what to log. This blog entry offers some guidelines to a solid approach to application logging that will help reconstruct the timeline of events that happened before a software failure.

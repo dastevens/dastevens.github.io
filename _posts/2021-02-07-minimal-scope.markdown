@@ -4,6 +4,11 @@ title:  "Minimal Scope"
 date:   2021-02-07
 categories: coding design software
 ---
+
+<p align="center">
+  <img src="/assets/images/header-640.131.1.png" width="100%">
+</p>
+
 Code complexity can be split in two: the innate complexity of the problem, and the accidental complexity that has been allowed to creep into the solution.
 
 So an obvious question is can we reduce accidental complexity, and will it help us to write more expressive code?

@@ -21,8 +21,7 @@
 title: Code and Chips
 #email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I’m going to use this space to share some ideas I have about how I like to write software.
-  And also to document some of my hobby projects.
+  Software and hobby projects blog
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
