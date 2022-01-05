@@ -1,0 +1,105 @@
+OAuth2 RFC 6749
+
+2012, Microsoft
+
+Updated by 8252, 8996, see also 6750
+
+1. Introduction
+
+In a nutshell: Share access with client application to protected resources
+For example: gmail, google account
+
+Problem: Before OAuth2, needed to share account credentials without fine-grain control of access
+Solution: OAuth2 allows delegated permissions with fine-grain control without sharing account credentials
+
+HTTP
+Separates client and resource owner
+Separates resource server and authorization server
+
+Client obtains an access token
+- approved by resource owner
+- scope
+- lifetime
+
+1.1 Roles
+
+- resource owner
+- client
+- resource server
+- authorization server
+
+1.2 Protocol Flow
+
+Abstract flow
+** Zoom on diagram
+
+4 different grant types
+
+1.3 Authorization Grant
+
+"An authorization grant is a credential..."
+
+1.3.1 Authorization Code
+
+** Zoom on diagram
+
+1.3.2 Implicit
+
+Simplified flow: no authorization code, access token is returned
+
+OAuth 2.0 Security Best Current Practice
+- https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics
+- "clients SHOULD NOT use the implicit grant...unless..."
+- Internet resources indicate PKCE is recommended as a replacement?
+
+1.3.3 Resource Owner Password Credentials
+
+Authorization code is replaced by resource owner's username and password. The client has access to the username and password
+
+1.3.4 Client Credentials
+
+- Client provisioned with username/password
+- Client uses username/password as authorization grant
+
+...
+
+2. Client Registration => ** App Registration in Azure
+
+Authorization server can identify the client
+
+- Define redirection URI
+- Provide client ID
+- Provide client secret to clients capable of storing it safely
+
+2.1 Client Types
+
+- confidential: client on secure server (web backend)
+- public: installed native app, client-side websites
+
+3. Protocol Endpoints
+
+- Authorization server
+  - Authorization endpoint
+  - Token endpoint
+- Client
+  - Redirection endpoint (redirection URL)
+
+3.3 Access Token Scope
+
+- Specified when authorization grant is requested
+- Can be further reduced when access token is acquired
+
+    scope="openid profile email"
+    
+4.1 Obtaining Authorization
+
+- Diagram shows further detail with user agent
+- Details each request
+** Page 23: Authorization Code Grant Flow
+** Page 31: Implicit Grant Flow
+** Page 37: Resource Owner Password Credentials Flow
+** Page 40: Client Credentials Flow
+
+
+** Take a look at trello authentication
+** Take a look at hive authentication

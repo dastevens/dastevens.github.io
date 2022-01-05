@@ -1,0 +1,31 @@
+Blazor
+- https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor
+
+- Blends two different technologies
+    - Razor server side web pages
+        - https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/da1?view=aspnetcore-5.0
+        - Similar syntax to react components
+        
+    - Web assembly
+        - https://webassembly.org/
+        
+- Two different process models:
+
+    - Server-side
+        - Updates to the DOM occur with SignalR connection
+        - Similar architecture to aspnet pages with partial page updates
+
+    - Client-side
+        - C# code runs in the client
+
+- Access to javascript APIs
+    - manipulate the DOM directly
+
+- Demo
+
+    - Introduce dotnet framework windows forms app
+    - Migrate to dotnet core
+    - Server side
+    - Wasm version
+        - Contrast difference in support classes and dependencies
+    

@@ -1,0 +1,70 @@
+
+
+https://www.youtube.com/watch?v=Kb56GzQ2pSk
+
+Similar to OAuth Authorization code flow
+But
+1. application requests response_type=code id_token&scope=openid
+2. auth server returns
+- code (same as Authorization code flow)
+- id token: contains user claims
+
+https://www.youtube.com/watch?v=VI3G4Quzsb8
+
+OIDC is identity layer on top of OAuth2
+
+- social login, identity federation
+  - login with facebook/google
+
+OAuth2
+- response_type -> code, token
+- grant_type -> authorization_code, refresh_token, ropc (password), client_credentials
+- scope -> no values specified
+- token -> access_token, refresh_token
+- No identifiers for resource_owners
+- No resource endpoints
+
+
+OpenID Connect
+- response_type -> code, token, id_token, code token, code id_token, id_token token, code id_token token
+- grant_type -> authorization_code, refresh_token (ropc, client_credentials not supported)
+- scope -> openid profile email phone address (offline_access)
+- token -> access_token, refresh_token
+- identifier for resource_owners (users) -> id_token (JSON Web Token, JWT)
+- resource endpoint -> /userinfo
+
+id_token contains claims:
+- iss: the issuer
+- aud: audience (who requested it)
+- sub: subject (who is represented)
+- iat: issued at
+- exp: expiration time
+- at_hash: related to access_token
+
+First request - response
+
+1. Initial authorization request: include openid in scope
+GET /authorization?
+    client_id=<MY-CLIENT_ID>&
+    scope=openid+email+profile&
+    response_type=code&
+    redirect_uri=http://.../callback
+
+2. Code exchange
+POST /token
+
+    client_id=<MY-CLIENT_ID>
+    client_secret=<MY-CLIENT-SECRET>
+    grant_type=authorization_code
+    code=<CODE-RETURNED-BY-GET-CALL>
+    redirect_uri=http://.../callback
+
+3. Token response: now contains id_token
+{
+    "access_token": "<AN-ACCESS-TOKEN>",
+    "refresh_token": "<A-REFRESH-TOKEN>",
+    "expires_in": 3600,
+    "scope": "openid email profile",
+    "token_type": "Bearer",
+    "id_token": "
+}

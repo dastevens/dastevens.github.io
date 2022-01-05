@@ -1,0 +1,41 @@
+CICD for github to windows service in SCADA zone
+
+- Analysis of current state/desired state
+    - Deployments took a long time
+    - Server installs not consistent (messy)
+    - No audit trail
+    - Difficult to discover what is installed where
+
+- Looked at some options, but none met the requirements
+    - Squirrel
+    - Chocolatey
+    - Google chrome update service
+
+- Decided to roll my own
+    - 2 stage publish/deploy paradigm
+        - Publish = Make available for deployment
+        - Deploy = Install ready for execution
+    - Publish to ArtefactStore
+    - Deploy with UpdateService
+
+- pack-man/smart-edge-packages
+
+    - artefact store
+        - versioned zip archives organized into packages
+        - Artefact.json describes zip archives
+        - Dependencies allow enable of config files
+
+    - pack-man
+        - A simple package manager
+        - zips up a folder and labels it with semver => an artefact
+        - extracts an artefact to a folder
+        - installs an artefact and its dependencies to a folder
+
+    - smart-edge-packages
+        - version controlled package repository
+        - all package changes are peer reviewed
+        - audit trail
+        - PRs can show changes to several different instances
+        - can change config without making a new binary package (build)
+
+- Demo of UpdateService installing RES.Security.Console

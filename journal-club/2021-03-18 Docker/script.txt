@@ -1,0 +1,38 @@
+Docker
+
+- What is docker?
+    - Build, ship, run
+    - A bit like a VM, but lightweight
+    - Offers a virtual linux OS
+    - Packages all dependencies into a container image
+
+- What problem does is solve?
+    - Simplifies release of services
+    - Is used widely in the cloud by azure, aws, google
+
+- Quick overview
+    - https://data-flair.training/blogs/docker-architecture/
+    - Container -> Image -> Engine
+    - Dockerfile
+    - Container repository (docker hub)
+
+- Run bash in a container
+    - docker run -it --rm ubuntu bash
+    
+- Docker hub
+    - Take a look around published containers https://hub.docker.com/
+    - Try out some containers
+    - docker run -it --rm -p 9090:9090 prom/prometheus
+
+- Build and run an aspnetcore image
+    - dotnet new webapi -o App
+    - dotnet run --project App/App.csproj
+    - Open https://localhost:5001/Weatherforecast
+
+    - Make Dockerfile
+    - docker build . -t journal-club
+    - docker run -it --rm -p 5000:80 journal-club
+    - Open https://localhost:5000/Weatherforecast
+
+Official site: https://www.docker.com/
+Docker in a nutshell: https://medium.com/dev-jam/docker-in-a-nutshell-f2e315211195

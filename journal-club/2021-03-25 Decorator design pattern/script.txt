@@ -1,0 +1,30 @@
+Decorator design pattern
+
+https://refactoring.guru/design-patterns/decorator
+
+. Add new functionality with loose coupling
+  . Don't need to change existing code (sometimes you cannot)
+  . No inheritance (loose coupling)
+  . Useful when you already have several implementations
+  . Wrap an existing interface
+  . Modular and composable
+
+. Let's hack a bit of code...
+  . Add logging
+  . Add message truncation
+  . Add retry
+  . Stack them up
+ 
+. A couple of examples of code in production
+  . LoggingMessager
+  . LoadBalancingMessager
+
+Possible uses:
+  . Filtering
+  . Logging
+  . Aggregation
+  . Security permissions
+  . Connection retry and backoff strategy
+  . Message routing
+  
+If time, brainstorm for journal club ideas

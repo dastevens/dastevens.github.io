@@ -1,0 +1,15 @@
+- Gang of Four: Elements of Reusable Object-Oriented Software (1994)
+  - 23 software design patterns
+  - Creational, Structural, Behavioural
+
+https://refactoring.guru/
+https://refactoring.guru/design-patterns/factory-method
+
+Factory method
+
+- Creational pattern
+
+  - Abstract away use of new to allow polymorphism
+  - Class hierarchy
+    - Base class provides overridable creation stub
+    - Sub class implements
