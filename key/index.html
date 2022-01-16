@@ -1,15 +1,9 @@
 <html>
     <head>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
     </body>
@@ -45,21 +39,21 @@
 
     document.write('<ul class="collection">')
     for (var i = -3; i <= 3; i++) {
-    document.write("<li>")
-    let date = addDays(today, i);
-    let dateString = date.toISOString().split('T')[0];
-    let hash = hashCode(dateString);
-    var className = "collection-item";
-    if (todayString == dateString) {
-        className += " active";
-    }
-    document.write('<li class="' + className + '"><div>');
-    document.write(keys[(hash % 12)]);
-    document.write('<span class="badge">' + dateString + '</span>');
-    if (todayString == dateString) {
-        document.write('<a href="#!" class="secondary-content"><i class="material-icons">music_note</i></a>');
-    }
-    document.write('</div></li>');
+        document.write("<li>")
+        let date = addDays(today, i);
+        let dateString = date.toISOString().split('T')[0];
+        let hash = hashCode(dateString);
+        var className = "collection-item";
+        if (todayString == dateString) {
+            className += " active";
+        }
+        document.write('<li class="' + className + '"><div>');
+        document.write(keys[(hash % 12)]);
+        document.write('<span class="badge">' + dateString + '</span>');
+        if (todayString == dateString) {
+            document.write('<a href="#!" class="secondary-content"><i class="material-icons">music_note</i></a>');
+        }
+        document.write('</div></li>');
     }
     document.write("</ul>")
 </script>
