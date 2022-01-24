@@ -32,13 +32,22 @@
     let today = new Date();
     let todayString = today.toISOString().split('T')[0];
     var keys = [
-    "C", "F", "Bb", "Eb",
-    "Ab", "C#", "F#", "B",
-    "E", "A", "D", "G",
+    "C major", "C minor",
+    "F major", "F minor",
+    "Bb major", "Bb minor",
+    "Eb major", "Eb minor",
+    "Ab major", "Ab minor",
+    "C# major", "C# minor",
+    "F# major", "F# minor",
+    "B major", "B minor",
+    "E major", "E minor",
+    "A major", "A minor",
+    "D major", "D minor",
+    "G major", "G minor",
     ];
 
     document.write('<ul class="collection">')
-    for (var i = -3; i <= 3; i++) {
+    for (var i = -3; i <= 30; i++) {
         document.write("<li>")
         let date = addDays(today, i);
         let dateString = date.toISOString().split('T')[0];
